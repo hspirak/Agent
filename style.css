@@ -1,0 +1,71 @@
+
+body {
+    background-color:rgb(19, 7, 67);
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+    margin-bottom: 40px;
+    color: rgb(241, 79, 106);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    width: 220px;
+    height: 70px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 70px;
+    font-size:2em;
+}
+
+button {
+    border-radius: 5px;
+    color:rgb(241, 79, 106);
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button:hover {
+    background-color:rgb(241, 79, 106);
+    color: white;
+}
+
+#won {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+#inside {
+    border-radius: 40px;
+    font-size: 2em;
+    margin-top: 100px;
+    color:rgb(241, 79, 106);
+    background-color:white;
+    height: 50%;
+    width: 50%;
+    text-align: justify;
+    padding: 40px;
+
+}
+
+#hooray {
+    text-align: center;
+    font-size: 3em;
+    font-family: fantasy;
+}

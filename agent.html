@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+        <h2>Top Secret Code</h2>
+        <form>
+        <input type="text" id="animal"> <br>
+        <input type="text" id="time"><br>
+        <input type="text" id="color"> <br>
+        </form>
+        <button onclick="check()">SEND</button>
+        <div id="response">
+            
+        </div>
+    </div>
+
+    <script>
+        function check() {
+            if (document.getElementById("animal").value.toLowerCase() == "dog" && document.getElementById("time").value.toLowerCase() == "now" && document.getElementById("color").value.toLowerCase() == "yellow")
+            {
+                document.getElementById("main").innerHTML = "<div id='inside'> <div id='hooray'>HOORAY!</div> <br> <br> Congratulations Agent. <br> <br> You are now being promoted to Top Agent! <br> <br> Stay tuned for a reward from our agency this upcomig week. Great work! </div>"
+                
+                document.getElementById("main").id = "won";
+            }
+            else {
+                document.getElementById("response").innerHTML = "WRONG CODE"
+            }
+        }
+    </script>
+</body>
+</html>
